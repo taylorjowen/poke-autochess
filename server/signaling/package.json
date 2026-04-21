@@ -1,0 +1,19 @@
+{
+  "name": "pac-signaling",
+  "version": "0.0.0",
+  "private": true,
+  "description": "WebRTC signaling broker for Pokémon Auto Chess. Cloudflare Worker (connection brokering only — no game state).",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "typescript": "^5.5.4",
+    "wrangler": "^3.78.0"
+  }
+}

@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+name = "pac-signaling"
+main = "src/index.ts"
+compatibility_date = "2026-04-21"
+
+# Durable Object binding: one instance per lobby id. Each instance owns the
+# WebSocket sessions of the peers in that lobby and relays SDP/ICE between
+# them. No game state is stored or relayed — only WebRTC handshake traffic.
+[[durable_objects.bindings]]
+name = "LOBBY"
+class_name = "LobbyRoom"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["LobbyRoom"]
+
+# Per-environment config (stage, prod) can be added later via [env.<name>].
