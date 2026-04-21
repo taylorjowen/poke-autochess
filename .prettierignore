@@ -1,0 +1,5 @@
+node_modules
+dist
+.wrangler
+src/vendor/pokerogue
+package-lock.json

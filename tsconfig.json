@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": false,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    "noEmit": true,
+    "useDefineForClassFields": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@game/*": ["src/game/*"],
+      "@vendor/*": ["src/vendor/*"],
+      "@shared/*": ["src/shared/*"],
+
+      // PokeRogue's internal aliases — preserved so vendored files compile
+      // without modification. See VENDORING.md.
+      "#app/*": ["src/vendor/pokerogue/*"],
+      "#app": ["src/vendor/pokerogue/stubs/global-scene"],
+      "#api/*": ["src/vendor/pokerogue/stubs/api/*"],
+      "#system/*": ["src/vendor/pokerogue/stubs/system/*"],
+      "#enums/*": ["src/vendor/pokerogue/enums/*"],
+      "#data/*": ["src/vendor/pokerogue/data/*"],
+      "#field/*": ["src/vendor/pokerogue/field/*"],
+      "#moves/*": ["src/vendor/pokerogue/data/moves/*"],
+      "#abilities/*": ["src/vendor/pokerogue/data/abilities/*"],
+      "#balance/*": ["src/vendor/pokerogue/data/balance/*"],
+      "#types/*": ["src/vendor/pokerogue/@types/*"],
+      "#test/*": ["src/vendor/pokerogue/test/*"],
+      "#ui/*": ["src/vendor/pokerogue/stubs/ui/*"],
+      "#phases/*": ["src/vendor/pokerogue/phases/*"],
+      "#sprites/*": ["src/vendor/pokerogue/sprites/*"],
+      "#mystery-encounters/*": ["src/vendor/pokerogue/stubs/mystery-encounters/*"],
+      "#plugins/*": ["src/vendor/pokerogue/plugins/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "vite.config.ts"],
+  "exclude": ["node_modules", "dist", "server", "src/vendor/pokerogue/test"]
+}
