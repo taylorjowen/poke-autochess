@@ -1,0 +1,4563 @@
+{
+  "name": "Generation I (Kanto)",
+  "version": "1.0.0",
+  "poolSizes": {
+    "1": 22,
+    "2": 20,
+    "3": 17,
+    "4": 10,
+    "5": 9
+  },
+  "pokemon": [
+    {
+      "id": "magikarp",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "magikarp",
+          "displayName": "Magikarp",
+          "moves": [
+            {
+              "id": "splash",
+              "name": "Splash",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 40
+            },
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "flail",
+              "name": "Flail",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "gyarados",
+          "displayName": "Gyarados",
+          "moves": [
+            {
+              "id": "waterfall",
+              "name": "Waterfall",
+              "type": "water",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "bite",
+              "name": "Bite",
+              "type": "dark",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "dragon-rage",
+              "name": "Dragon Rage",
+              "type": "dragon",
+              "power": null,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "leer",
+              "name": "Leer",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "gyarados",
+          "displayName": "Gyarados",
+          "moves": [
+            {
+              "id": "hydro-pump",
+              "name": "Hydro Pump",
+              "type": "water",
+              "power": 110,
+              "accuracy": 80,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "dragon-dance",
+              "name": "Dragon Dance",
+              "type": "dragon",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "ice-fang",
+              "name": "Ice Fang",
+              "type": "ice",
+              "power": 65,
+              "accuracy": 95,
+              "category": "physical",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caterpie",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "caterpie",
+          "displayName": "Caterpie",
+          "moves": [
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "string-shot",
+              "name": "String Shot",
+              "type": "bug",
+              "power": null,
+              "accuracy": 95,
+              "category": "status",
+              "pp": 40
+            },
+            {
+              "id": "bug-bite",
+              "name": "Bug Bite",
+              "type": "bug",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "butterfree",
+          "displayName": "Butterfree",
+          "moves": [
+            {
+              "id": "gust",
+              "name": "Gust",
+              "type": "flying",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 35
+            },
+            {
+              "id": "confusion",
+              "name": "Confusion",
+              "type": "psychic",
+              "power": 50,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "sleep-powder",
+              "name": "Sleep Powder",
+              "type": "grass",
+              "power": null,
+              "accuracy": 75,
+              "category": "status",
+              "pp": 15
+            },
+            {
+              "id": "mega-drain",
+              "name": "Mega Drain",
+              "type": "grass",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "butterfree",
+          "displayName": "Butterfree",
+          "moves": [
+            {
+              "id": "quiver-dance",
+              "name": "Quiver Dance",
+              "type": "bug",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "bug-buzz",
+              "name": "Bug Buzz",
+              "type": "bug",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "sleep-powder",
+              "name": "Sleep Powder",
+              "type": "grass",
+              "power": null,
+              "accuracy": 75,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pidgey",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "pidgey",
+          "displayName": "Pidgey",
+          "moves": [
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "gust",
+              "name": "Gust",
+              "type": "flying",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 35
+            },
+            {
+              "id": "sand-attack",
+              "name": "Sand Attack",
+              "type": "ground",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "pidgeotto",
+          "displayName": "Pidgeotto",
+          "moves": [
+            {
+              "id": "wing-attack",
+              "name": "Wing Attack",
+              "type": "flying",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "quick-attack",
+              "name": "Quick Attack",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "pidgeot",
+          "displayName": "Pidgeot",
+          "moves": [
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "heat-wave",
+              "name": "Heat Wave",
+              "type": "fire",
+              "power": 95,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rattata",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "rattata",
+          "displayName": "Rattata",
+          "moves": [
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "bite",
+              "name": "Bite",
+              "type": "dark",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "quick-attack",
+              "name": "Quick Attack",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "raticate",
+          "displayName": "Raticate",
+          "moves": [
+            {
+              "id": "hyper-fang",
+              "name": "Hyper Fang",
+              "type": "normal",
+              "power": 80,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "crunch",
+              "name": "Crunch",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "sucker-punch",
+              "name": "Sucker Punch",
+              "type": "dark",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "scary-face",
+              "name": "Scary Face",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "raticate",
+          "displayName": "Raticate",
+          "moves": [
+            {
+              "id": "double-edge",
+              "name": "Double-Edge",
+              "type": "normal",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "swords-dance",
+              "name": "Swords Dance",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "facade",
+              "name": "Facade",
+              "type": "normal",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "sucker-punch",
+              "name": "Sucker Punch",
+              "type": "dark",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jigglypuff",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "jigglypuff",
+          "displayName": "Jigglypuff",
+          "moves": [
+            {
+              "id": "pound",
+              "name": "Pound",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "sing",
+              "name": "Sing",
+              "type": "normal",
+              "power": null,
+              "accuracy": 55,
+              "category": "status",
+              "pp": 15
+            },
+            {
+              "id": "disarming-voice",
+              "name": "Disarming Voice",
+              "type": "fairy",
+              "power": 40,
+              "accuracy": null,
+              "category": "special",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "wigglytuff",
+          "displayName": "Wigglytuff",
+          "moves": [
+            {
+              "id": "play-rough",
+              "name": "Play Rough",
+              "type": "fairy",
+              "power": 90,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "hyper-voice",
+              "name": "Hyper Voice",
+              "type": "normal",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "wish",
+              "name": "Wish",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "wigglytuff",
+          "displayName": "Wigglytuff",
+          "moves": [
+            {
+              "id": "boomburst",
+              "name": "Boomburst",
+              "type": "normal",
+              "power": 140,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "play-rough",
+              "name": "Play Rough",
+              "type": "fairy",
+              "power": 90,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "fire-blast",
+              "name": "Fire Blast",
+              "type": "fire",
+              "power": 110,
+              "accuracy": 85,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zubat",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "zubat",
+          "displayName": "Zubat",
+          "moves": [
+            {
+              "id": "leech-life",
+              "name": "Leech Life",
+              "type": "bug",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "confuse-ray",
+              "name": "Confuse Ray",
+              "type": "ghost",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "toxic",
+              "name": "Toxic",
+              "type": "poison",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "golbat",
+          "displayName": "Golbat",
+          "moves": [
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "poison-jab",
+              "name": "Poison Jab",
+              "type": "poison",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "haze",
+              "name": "Haze",
+              "type": "ice",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "crobat",
+          "displayName": "Crobat",
+          "moves": [
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "cross-poison",
+              "name": "Cross Poison",
+              "type": "poison",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "super-fang",
+              "name": "Super Fang",
+              "type": "normal",
+              "power": null,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diglett",
+      "cost": 1,
+      "poolSize": 22,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 10,
+          "speciesId": "diglett",
+          "displayName": "Diglett",
+          "moves": [
+            {
+              "id": "mud-slap",
+              "name": "Mud-Slap",
+              "type": "ground",
+              "power": 20,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "bulldoze",
+              "name": "Bulldoze",
+              "type": "ground",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "sand-attack",
+              "name": "Sand Attack",
+              "type": "ground",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 22,
+          "speciesId": "diglett",
+          "displayName": "Diglett",
+          "moves": [
+            {
+              "id": "dig",
+              "name": "Dig",
+              "type": "ground",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "rock-slide",
+              "name": "Rock Slide",
+              "type": "rock",
+              "power": 75,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "sucker-punch",
+              "name": "Sucker Punch",
+              "type": "dark",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "agility",
+              "name": "Agility",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 34,
+          "speciesId": "dugtrio",
+          "displayName": "Dugtrio",
+          "moves": [
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "high-horsepower",
+              "name": "High Horsepower",
+              "type": "ground",
+              "power": 95,
+              "accuracy": 95,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "iron-head",
+              "name": "Iron Head",
+              "type": "steel",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pikachu",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "pikachu",
+          "displayName": "Pikachu",
+          "moves": [
+            {
+              "id": "thunder-shock",
+              "name": "Thunder Shock",
+              "type": "electric",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 30
+            },
+            {
+              "id": "quick-attack",
+              "name": "Quick Attack",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "nuzzle",
+              "name": "Nuzzle",
+              "type": "electric",
+              "power": 20,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "raichu",
+          "displayName": "Raichu",
+          "moves": [
+            {
+              "id": "thunderbolt",
+              "name": "Thunderbolt",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "volt-tackle",
+              "name": "Volt Tackle",
+              "type": "electric",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "knock-off",
+              "name": "Knock Off",
+              "type": "dark",
+              "power": 65,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "grass-knot",
+              "name": "Grass Knot",
+              "type": "grass",
+              "power": null,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "raichu",
+          "displayName": "Raichu",
+          "moves": [
+            {
+              "id": "thunder",
+              "name": "Thunder",
+              "type": "electric",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "focus-blast",
+              "name": "Focus Blast",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "surf",
+              "name": "Surf",
+              "type": "water",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "nasty-plot",
+              "name": "Nasty Plot",
+              "type": "dark",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charmander",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "charmander",
+          "displayName": "Charmander",
+          "moves": [
+            {
+              "id": "scratch",
+              "name": "Scratch",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "ember",
+              "name": "Ember",
+              "type": "fire",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "growl",
+              "name": "Growl",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 40
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "charmeleon",
+          "displayName": "Charmeleon",
+          "moves": [
+            {
+              "id": "flamethrower",
+              "name": "Flamethrower",
+              "type": "fire",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "dragon-breath",
+              "name": "Dragon Breath",
+              "type": "dragon",
+              "power": 60,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "fire-fang",
+              "name": "Fire Fang",
+              "type": "fire",
+              "power": 65,
+              "accuracy": 95,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "charizard",
+          "displayName": "Charizard",
+          "moves": [
+            {
+              "id": "fire-blast",
+              "name": "Fire Blast",
+              "type": "fire",
+              "power": 110,
+              "accuracy": 85,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "dragon-claw",
+              "name": "Dragon Claw",
+              "type": "dragon",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "solar-beam",
+              "name": "Solar Beam",
+              "type": "grass",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bulbasaur",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "bulbasaur",
+          "displayName": "Bulbasaur",
+          "moves": [
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "vine-whip",
+              "name": "Vine Whip",
+              "type": "grass",
+              "power": 45,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "leech-seed",
+              "name": "Leech Seed",
+              "type": "grass",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "ivysaur",
+          "displayName": "Ivysaur",
+          "moves": [
+            {
+              "id": "giga-drain",
+              "name": "Giga Drain",
+              "type": "grass",
+              "power": 75,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "sludge-bomb",
+              "name": "Sludge Bomb",
+              "type": "poison",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "sleep-powder",
+              "name": "Sleep Powder",
+              "type": "grass",
+              "power": null,
+              "accuracy": 75,
+              "category": "status",
+              "pp": 15
+            },
+            {
+              "id": "synthesis",
+              "name": "Synthesis",
+              "type": "grass",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "venusaur",
+          "displayName": "Venusaur",
+          "moves": [
+            {
+              "id": "petal-dance",
+              "name": "Petal Dance",
+              "type": "grass",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "earth-power",
+              "name": "Earth Power",
+              "type": "ground",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "sludge-bomb",
+              "name": "Sludge Bomb",
+              "type": "poison",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "growth",
+              "name": "Growth",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squirtle",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "squirtle",
+          "displayName": "Squirtle",
+          "moves": [
+            {
+              "id": "tackle",
+              "name": "Tackle",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "water-gun",
+              "name": "Water Gun",
+              "type": "water",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "withdraw",
+              "name": "Withdraw",
+              "type": "water",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 40
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "wartortle",
+          "displayName": "Wartortle",
+          "moves": [
+            {
+              "id": "scald",
+              "name": "Scald",
+              "type": "water",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "rapid-spin",
+              "name": "Rapid Spin",
+              "type": "normal",
+              "power": 50,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 40
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "blastoise",
+          "displayName": "Blastoise",
+          "moves": [
+            {
+              "id": "hydro-pump",
+              "name": "Hydro Pump",
+              "type": "water",
+              "power": 110,
+              "accuracy": 80,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "dark-pulse",
+              "name": "Dark Pulse",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "shell-smash",
+              "name": "Shell Smash",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slowpoke",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "slowpoke",
+          "displayName": "Slowpoke",
+          "moves": [
+            {
+              "id": "water-gun",
+              "name": "Water Gun",
+              "type": "water",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "confusion",
+              "name": "Confusion",
+              "type": "psychic",
+              "power": 50,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "slack-off",
+              "name": "Slack Off",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "slowbro",
+          "displayName": "Slowbro",
+          "moves": [
+            {
+              "id": "scald",
+              "name": "Scald",
+              "type": "water",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "psychic",
+              "name": "Psychic",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "slack-off",
+              "name": "Slack Off",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "calm-mind",
+              "name": "Calm Mind",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "slowbro",
+          "displayName": "Slowbro",
+          "moves": [
+            {
+              "id": "future-sight",
+              "name": "Future Sight",
+              "type": "psychic",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "body-press",
+              "name": "Body Press",
+              "type": "fighting",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "slack-off",
+              "name": "Slack Off",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "onix",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "onix",
+          "displayName": "Onix",
+          "moves": [
+            {
+              "id": "rock-throw",
+              "name": "Rock Throw",
+              "type": "rock",
+              "power": 50,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "bind",
+              "name": "Bind",
+              "type": "normal",
+              "power": 15,
+              "accuracy": 85,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "screech",
+              "name": "Screech",
+              "type": "normal",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 40
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "steelix",
+          "displayName": "Steelix",
+          "moves": [
+            {
+              "id": "heavy-slam",
+              "name": "Heavy Slam",
+              "type": "steel",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "roar",
+              "name": "Roar",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "steelix",
+          "displayName": "Steelix",
+          "moves": [
+            {
+              "id": "gyro-ball",
+              "name": "Gyro Ball",
+              "type": "steel",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "body-press",
+              "name": "Body Press",
+              "type": "fighting",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "heavy-slam",
+              "name": "Heavy Slam",
+              "type": "steel",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "dragon-tail",
+              "name": "Dragon Tail",
+              "type": "dragon",
+              "power": 60,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clefairy",
+      "cost": 2,
+      "poolSize": 20,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 20,
+          "speciesId": "clefairy",
+          "displayName": "Clefairy",
+          "moves": [
+            {
+              "id": "moonblast",
+              "name": "Moonblast",
+              "type": "fairy",
+              "power": 95,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "follow-me",
+              "name": "Follow Me",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 32,
+          "speciesId": "clefable",
+          "displayName": "Clefable",
+          "moves": [
+            {
+              "id": "moonblast",
+              "name": "Moonblast",
+              "type": "fairy",
+              "power": 95,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "soft-boiled",
+              "name": "Soft-Boiled",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "thunder-wave",
+              "name": "Thunder Wave",
+              "type": "electric",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 44,
+          "speciesId": "clefable",
+          "displayName": "Clefable",
+          "moves": [
+            {
+              "id": "moonblast",
+              "name": "Moonblast",
+              "type": "fairy",
+              "power": 95,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "fire-blast",
+              "name": "Fire Blast",
+              "type": "fire",
+              "power": 110,
+              "accuracy": 85,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "calm-mind",
+              "name": "Calm Mind",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "wish",
+              "name": "Wish",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "machop",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "machop",
+          "displayName": "Machop",
+          "moves": [
+            {
+              "id": "low-kick",
+              "name": "Low Kick",
+              "type": "fighting",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "revenge",
+              "name": "Revenge",
+              "type": "fighting",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "bulk-up",
+              "name": "Bulk Up",
+              "type": "fighting",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "machoke",
+          "displayName": "Machoke",
+          "moves": [
+            {
+              "id": "drain-punch",
+              "name": "Drain Punch",
+              "type": "fighting",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "knock-off",
+              "name": "Knock Off",
+              "type": "dark",
+              "power": 65,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "bullet-punch",
+              "name": "Bullet Punch",
+              "type": "steel",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "poison-jab",
+              "name": "Poison Jab",
+              "type": "poison",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "machamp",
+          "displayName": "Machamp",
+          "moves": [
+            {
+              "id": "close-combat",
+              "name": "Close Combat",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "stone-edge",
+              "name": "Stone Edge",
+              "type": "rock",
+              "power": 100,
+              "accuracy": 80,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "bullet-punch",
+              "name": "Bullet Punch",
+              "type": "steel",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "wide-guard",
+              "name": "Wide Guard",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abra",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "abra",
+          "displayName": "Abra",
+          "moves": [
+            {
+              "id": "confusion",
+              "name": "Confusion",
+              "type": "psychic",
+              "power": 50,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "charge-beam",
+              "name": "Charge Beam",
+              "type": "electric",
+              "power": 50,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "teleport",
+              "name": "Teleport",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "kadabra",
+          "displayName": "Kadabra",
+          "moves": [
+            {
+              "id": "psybeam",
+              "name": "Psybeam",
+              "type": "psychic",
+              "power": 65,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "shadow-ball",
+              "name": "Shadow Ball",
+              "type": "ghost",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "recover",
+              "name": "Recover",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "reflect",
+              "name": "Reflect",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "alakazam",
+          "displayName": "Alakazam",
+          "moves": [
+            {
+              "id": "psychic",
+              "name": "Psychic",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "focus-blast",
+              "name": "Focus Blast",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "shadow-ball",
+              "name": "Shadow Ball",
+              "type": "ghost",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "calm-mind",
+              "name": "Calm Mind",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastly",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "gastly",
+          "displayName": "Gastly",
+          "moves": [
+            {
+              "id": "lick",
+              "name": "Lick",
+              "type": "ghost",
+              "power": 30,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "hex",
+              "name": "Hex",
+              "type": "ghost",
+              "power": 65,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "haunter",
+          "displayName": "Haunter",
+          "moves": [
+            {
+              "id": "shadow-punch",
+              "name": "Shadow Punch",
+              "type": "ghost",
+              "power": 60,
+              "accuracy": null,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "sludge-bomb",
+              "name": "Sludge Bomb",
+              "type": "poison",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "destiny-bond",
+              "name": "Destiny Bond",
+              "type": "ghost",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            },
+            {
+              "id": "hypnosis",
+              "name": "Hypnosis",
+              "type": "psychic",
+              "power": null,
+              "accuracy": 60,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "gengar",
+          "displayName": "Gengar",
+          "moves": [
+            {
+              "id": "shadow-ball",
+              "name": "Shadow Ball",
+              "type": "ghost",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "sludge-wave",
+              "name": "Sludge Wave",
+              "type": "poison",
+              "power": 95,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "focus-blast",
+              "name": "Focus Blast",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scyther",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "scyther",
+          "displayName": "Scyther",
+          "moves": [
+            {
+              "id": "fury-cutter",
+              "name": "Fury Cutter",
+              "type": "bug",
+              "power": 40,
+              "accuracy": 95,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "wing-attack",
+              "name": "Wing Attack",
+              "type": "flying",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "quick-attack",
+              "name": "Quick Attack",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "scizor",
+          "displayName": "Scizor",
+          "moves": [
+            {
+              "id": "bullet-punch",
+              "name": "Bullet Punch",
+              "type": "steel",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "bug-bite",
+              "name": "Bug Bite",
+              "type": "bug",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "swords-dance",
+              "name": "Swords Dance",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "scizor",
+          "displayName": "Scizor",
+          "moves": [
+            {
+              "id": "bullet-punch",
+              "name": "Bullet Punch",
+              "type": "steel",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "close-combat",
+              "name": "Close Combat",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "knock-off",
+              "name": "Knock Off",
+              "type": "dark",
+              "power": 65,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "dual-wingbeat",
+              "name": "Dual Wingbeat",
+              "type": "flying",
+              "power": 40,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electabuzz",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "electabuzz",
+          "displayName": "Electabuzz",
+          "moves": [
+            {
+              "id": "thunder-punch",
+              "name": "Thunder Punch",
+              "type": "electric",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "swift",
+              "name": "Swift",
+              "type": "normal",
+              "power": 60,
+              "accuracy": null,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "light-screen",
+              "name": "Light Screen",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "electivire",
+          "displayName": "Electivire",
+          "moves": [
+            {
+              "id": "wild-charge",
+              "name": "Wild Charge",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "ice-punch",
+              "name": "Ice Punch",
+              "type": "ice",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "cross-chop",
+              "name": "Cross Chop",
+              "type": "fighting",
+              "power": 100,
+              "accuracy": 80,
+              "category": "physical",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "electivire",
+          "displayName": "Electivire",
+          "moves": [
+            {
+              "id": "thunder",
+              "name": "Thunder",
+              "type": "electric",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "giga-impact",
+              "name": "Giga Impact",
+              "type": "normal",
+              "power": 150,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "flamethrower",
+              "name": "Flamethrower",
+              "type": "fire",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magmar",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "magmar",
+          "displayName": "Magmar",
+          "moves": [
+            {
+              "id": "ember",
+              "name": "Ember",
+              "type": "fire",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "fire-punch",
+              "name": "Fire Punch",
+              "type": "fire",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "smokescreen",
+              "name": "Smokescreen",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "magmortar",
+          "displayName": "Magmortar",
+          "moves": [
+            {
+              "id": "fire-blast",
+              "name": "Fire Blast",
+              "type": "fire",
+              "power": 110,
+              "accuracy": 85,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "psychic",
+              "name": "Psychic",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "thunderbolt",
+              "name": "Thunderbolt",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "mach-punch",
+              "name": "Mach Punch",
+              "type": "fighting",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "magmortar",
+          "displayName": "Magmortar",
+          "moves": [
+            {
+              "id": "overheat",
+              "name": "Overheat",
+              "type": "fire",
+              "power": 130,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "focus-blast",
+              "name": "Focus Blast",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "solar-beam",
+              "name": "Solar Beam",
+              "type": "grass",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chansey",
+      "cost": 3,
+      "poolSize": 17,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 30,
+          "speciesId": "chansey",
+          "displayName": "Chansey",
+          "moves": [
+            {
+              "id": "pound",
+              "name": "Pound",
+              "type": "normal",
+              "power": 40,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 35
+            },
+            {
+              "id": "soft-boiled",
+              "name": "Soft-Boiled",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "aromatherapy",
+              "name": "Aromatherapy",
+              "type": "grass",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 42,
+          "speciesId": "blissey",
+          "displayName": "Blissey",
+          "moves": [
+            {
+              "id": "seismic-toss",
+              "name": "Seismic Toss",
+              "type": "fighting",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "soft-boiled",
+              "name": "Soft-Boiled",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "thunder-wave",
+              "name": "Thunder Wave",
+              "type": "electric",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 54,
+          "speciesId": "blissey",
+          "displayName": "Blissey",
+          "moves": [
+            {
+              "id": "hyper-voice",
+              "name": "Hyper Voice",
+              "type": "normal",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "flamethrower",
+              "name": "Flamethrower",
+              "type": "fire",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "calm-mind",
+              "name": "Calm Mind",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "soft-boiled",
+              "name": "Soft-Boiled",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dratini",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "dratini",
+          "displayName": "Dratini",
+          "moves": [
+            {
+              "id": "twister",
+              "name": "Twister",
+              "type": "dragon",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "slam",
+              "name": "Slam",
+              "type": "normal",
+              "power": 80,
+              "accuracy": 75,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "dragon-dance",
+              "name": "Dragon Dance",
+              "type": "dragon",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "dragonair",
+          "displayName": "Dragonair",
+          "moves": [
+            {
+              "id": "dragon-pulse",
+              "name": "Dragon Pulse",
+              "type": "dragon",
+              "power": 85,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "aqua-tail",
+              "name": "Aqua Tail",
+              "type": "water",
+              "power": 90,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "thunder-wave",
+              "name": "Thunder Wave",
+              "type": "electric",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "safeguard",
+              "name": "Safeguard",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 25
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "dragonite",
+          "displayName": "Dragonite",
+          "moves": [
+            {
+              "id": "outrage",
+              "name": "Outrage",
+              "type": "dragon",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "fire-punch",
+              "name": "Fire Punch",
+              "type": "fire",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rhyhorn",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "rhyhorn",
+          "displayName": "Rhyhorn",
+          "moves": [
+            {
+              "id": "horn-attack",
+              "name": "Horn Attack",
+              "type": "normal",
+              "power": 65,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "bulldoze",
+              "name": "Bulldoze",
+              "type": "ground",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "rock-blast",
+              "name": "Rock Blast",
+              "type": "rock",
+              "power": 25,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "rhydon",
+          "displayName": "Rhydon",
+          "moves": [
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "stone-edge",
+              "name": "Stone Edge",
+              "type": "rock",
+              "power": 100,
+              "accuracy": 80,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "megahorn",
+              "name": "Megahorn",
+              "type": "bug",
+              "power": 120,
+              "accuracy": 85,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "stealth-rock",
+              "name": "Stealth Rock",
+              "type": "rock",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "rhyperior",
+          "displayName": "Rhyperior",
+          "moves": [
+            {
+              "id": "rock-wrecker",
+              "name": "Rock Wrecker",
+              "type": "rock",
+              "power": 150,
+              "accuracy": 90,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "ice-punch",
+              "name": "Ice Punch",
+              "type": "ice",
+              "power": 75,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "porygon",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "porygon",
+          "displayName": "Porygon",
+          "moves": [
+            {
+              "id": "psybeam",
+              "name": "Psybeam",
+              "type": "psychic",
+              "power": 65,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "signal-beam",
+              "name": "Signal Beam",
+              "type": "bug",
+              "power": 75,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "recover",
+              "name": "Recover",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "porygon2",
+          "displayName": "Porygon2",
+          "moves": [
+            {
+              "id": "tri-attack",
+              "name": "Tri Attack",
+              "type": "normal",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "thunderbolt",
+              "name": "Thunderbolt",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "recover",
+              "name": "Recover",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "porygon-z",
+          "displayName": "Porygon-Z",
+          "moves": [
+            {
+              "id": "hyper-beam",
+              "name": "Hyper Beam",
+              "type": "normal",
+              "power": 150,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "dark-pulse",
+              "name": "Dark Pulse",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "nasty-plot",
+              "name": "Nasty Plot",
+              "type": "dark",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "trick-room",
+              "name": "Trick Room",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snorlax",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "snorlax",
+          "displayName": "Snorlax",
+          "moves": [
+            {
+              "id": "headbutt",
+              "name": "Headbutt",
+              "type": "normal",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "rest",
+              "name": "Rest",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "curse",
+              "name": "Curse",
+              "type": "ghost",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "snorlax",
+          "displayName": "Snorlax",
+          "moves": [
+            {
+              "id": "body-slam",
+              "name": "Body Slam",
+              "type": "normal",
+              "power": 85,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "crunch",
+              "name": "Crunch",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "heat-crash",
+              "name": "Heat Crash",
+              "type": "fire",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "curse",
+              "name": "Curse",
+              "type": "ghost",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "snorlax",
+          "displayName": "Snorlax",
+          "moves": [
+            {
+              "id": "double-edge",
+              "name": "Double-Edge",
+              "type": "normal",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "earthquake",
+              "name": "Earthquake",
+              "type": "ground",
+              "power": 100,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "self-destruct",
+              "name": "Self-Destruct",
+              "type": "normal",
+              "power": 200,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "rest",
+              "name": "Rest",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "growlithe",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "growlithe",
+          "displayName": "Growlithe",
+          "moves": [
+            {
+              "id": "bite",
+              "name": "Bite",
+              "type": "dark",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "flame-wheel",
+              "name": "Flame Wheel",
+              "type": "fire",
+              "power": 60,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 25
+            },
+            {
+              "id": "roar",
+              "name": "Roar",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "arcanine",
+          "displayName": "Arcanine",
+          "moves": [
+            {
+              "id": "flare-blitz",
+              "name": "Flare Blitz",
+              "type": "fire",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "wild-charge",
+              "name": "Wild Charge",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "close-combat",
+              "name": "Close Combat",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "morning-sun",
+              "name": "Morning Sun",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "arcanine",
+          "displayName": "Arcanine",
+          "moves": [
+            {
+              "id": "flare-blitz",
+              "name": "Flare Blitz",
+              "type": "fire",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "extreme-speed",
+              "name": "Extreme Speed",
+              "type": "normal",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "crunch",
+              "name": "Crunch",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exeggcute",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "exeggcute",
+          "displayName": "Exeggcute",
+          "moves": [
+            {
+              "id": "bullet-seed",
+              "name": "Bullet Seed",
+              "type": "grass",
+              "power": 25,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 30
+            },
+            {
+              "id": "leech-seed",
+              "name": "Leech Seed",
+              "type": "grass",
+              "power": null,
+              "accuracy": 90,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "sleep-powder",
+              "name": "Sleep Powder",
+              "type": "grass",
+              "power": null,
+              "accuracy": 75,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "exeggutor",
+          "displayName": "Exeggutor",
+          "moves": [
+            {
+              "id": "solar-beam",
+              "name": "Solar Beam",
+              "type": "grass",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "psychic",
+              "name": "Psychic",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "explosion",
+              "name": "Explosion",
+              "type": "normal",
+              "power": 250,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "trick-room",
+              "name": "Trick Room",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "exeggutor",
+          "displayName": "Exeggutor",
+          "moves": [
+            {
+              "id": "leaf-storm",
+              "name": "Leaf Storm",
+              "type": "grass",
+              "power": 130,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "draco-meteor",
+              "name": "Draco Meteor",
+              "type": "dragon",
+              "power": 130,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "sludge-bomb",
+              "name": "Sludge Bomb",
+              "type": "poison",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horsea",
+      "cost": 4,
+      "poolSize": 10,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 40,
+          "speciesId": "horsea",
+          "displayName": "Horsea",
+          "moves": [
+            {
+              "id": "bubble",
+              "name": "Bubble",
+              "type": "water",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 30
+            },
+            {
+              "id": "water-pulse",
+              "name": "Water Pulse",
+              "type": "water",
+              "power": 60,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "smokescreen",
+              "name": "Smokescreen",
+              "type": "normal",
+              "power": null,
+              "accuracy": 100,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 52,
+          "speciesId": "seadra",
+          "displayName": "Seadra",
+          "moves": [
+            {
+              "id": "dragon-pulse",
+              "name": "Dragon Pulse",
+              "type": "dragon",
+              "power": 85,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "hydro-pump",
+              "name": "Hydro Pump",
+              "type": "water",
+              "power": 110,
+              "accuracy": 80,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "agility",
+              "name": "Agility",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 64,
+          "speciesId": "kingdra",
+          "displayName": "Kingdra",
+          "moves": [
+            {
+              "id": "draco-meteor",
+              "name": "Draco Meteor",
+              "type": "dragon",
+              "power": 130,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "surf",
+              "name": "Surf",
+              "type": "water",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "rain-dance",
+              "name": "Rain Dance",
+              "type": "water",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articuno",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "articuno",
+          "displayName": "Articuno",
+          "moves": [
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "reflect",
+              "name": "Reflect",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "articuno",
+          "displayName": "Articuno",
+          "moves": [
+            {
+              "id": "blizzard",
+              "name": "Blizzard",
+              "type": "ice",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "freeze-dry",
+              "name": "Freeze-Dry",
+              "type": "ice",
+              "power": 70,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "articuno",
+          "displayName": "Articuno",
+          "moves": [
+            {
+              "id": "blizzard",
+              "name": "Blizzard",
+              "type": "ice",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "sheer-cold",
+              "name": "Sheer Cold",
+              "type": "ice",
+              "power": null,
+              "accuracy": 30,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zapdos",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "zapdos",
+          "displayName": "Zapdos",
+          "moves": [
+            {
+              "id": "thunder-shock",
+              "name": "Thunder Shock",
+              "type": "electric",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 30
+            },
+            {
+              "id": "drill-peck",
+              "name": "Drill Peck",
+              "type": "flying",
+              "power": 80,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "zapdos",
+          "displayName": "Zapdos",
+          "moves": [
+            {
+              "id": "thunderbolt",
+              "name": "Thunderbolt",
+              "type": "electric",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "heat-wave",
+              "name": "Heat Wave",
+              "type": "fire",
+              "power": 95,
+              "accuracy": 90,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "volt-switch",
+              "name": "Volt Switch",
+              "type": "electric",
+              "power": 70,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "zapdos",
+          "displayName": "Zapdos",
+          "moves": [
+            {
+              "id": "thunder",
+              "name": "Thunder",
+              "type": "electric",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "weather-ball",
+              "name": "Weather Ball",
+              "type": "normal",
+              "power": 50,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moltres",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "moltres",
+          "displayName": "Moltres",
+          "moves": [
+            {
+              "id": "ember",
+              "name": "Ember",
+              "type": "fire",
+              "power": 40,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 25
+            },
+            {
+              "id": "air-slash",
+              "name": "Air Slash",
+              "type": "flying",
+              "power": 75,
+              "accuracy": 95,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "will-o-wisp",
+              "name": "Will-O-Wisp",
+              "type": "fire",
+              "power": null,
+              "accuracy": 85,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "moltres",
+          "displayName": "Moltres",
+          "moves": [
+            {
+              "id": "flamethrower",
+              "name": "Flamethrower",
+              "type": "fire",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "roost",
+              "name": "Roost",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "sunny-day",
+              "name": "Sunny Day",
+              "type": "fire",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "moltres",
+          "displayName": "Moltres",
+          "moves": [
+            {
+              "id": "fire-blast",
+              "name": "Fire Blast",
+              "type": "fire",
+              "power": 110,
+              "accuracy": 85,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "solar-beam",
+              "name": "Solar Beam",
+              "type": "grass",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "substitute",
+              "name": "Substitute",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mew",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "mew",
+          "displayName": "Mew",
+          "moves": [
+            {
+              "id": "psychic",
+              "name": "Psychic",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "aura-sphere",
+              "name": "Aura Sphere",
+              "type": "fighting",
+              "power": 80,
+              "accuracy": null,
+              "category": "special",
+              "pp": 20
+            },
+            {
+              "id": "transform",
+              "name": "Transform",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "mew",
+          "displayName": "Mew",
+          "moves": [
+            {
+              "id": "psyshock",
+              "name": "Psyshock",
+              "type": "psychic",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "earth-power",
+              "name": "Earth Power",
+              "type": "ground",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "dragon-pulse",
+              "name": "Dragon Pulse",
+              "type": "dragon",
+              "power": 85,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "soft-boiled",
+              "name": "Soft-Boiled",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "mew",
+          "displayName": "Mew",
+          "moves": [
+            {
+              "id": "psystrike",
+              "name": "Psystrike",
+              "type": "psychic",
+              "power": 100,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "focus-blast",
+              "name": "Focus Blast",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 5
+            },
+            {
+              "id": "ice-beam",
+              "name": "Ice Beam",
+              "type": "ice",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "nasty-plot",
+              "name": "Nasty Plot",
+              "type": "dark",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articuno-galar",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "articuno-galar",
+          "displayName": "Galarian Articuno",
+          "moves": [
+            {
+              "id": "psycho-cut",
+              "name": "Psycho Cut",
+              "type": "psychic",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "air-slash",
+              "name": "Air Slash",
+              "type": "flying",
+              "power": 75,
+              "accuracy": 95,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "agility",
+              "name": "Agility",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 30
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "articuno-galar",
+          "displayName": "Galarian Articuno",
+          "moves": [
+            {
+              "id": "freezing-glare",
+              "name": "Freezing Glare",
+              "type": "psychic",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "recover",
+              "name": "Recover",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            },
+            {
+              "id": "calm-mind",
+              "name": "Calm Mind",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "articuno-galar",
+          "displayName": "Galarian Articuno",
+          "moves": [
+            {
+              "id": "future-sight",
+              "name": "Future Sight",
+              "type": "psychic",
+              "power": 120,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "shadow-ball",
+              "name": "Shadow Ball",
+              "type": "ghost",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "trick-room",
+              "name": "Trick Room",
+              "type": "psychic",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zapdos-galar",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "zapdos-galar",
+          "displayName": "Galarian Zapdos",
+          "moves": [
+            {
+              "id": "low-kick",
+              "name": "Low Kick",
+              "type": "fighting",
+              "power": null,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "payback",
+              "name": "Payback",
+              "type": "dark",
+              "power": 50,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "bulk-up",
+              "name": "Bulk Up",
+              "type": "fighting",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "zapdos-galar",
+          "displayName": "Galarian Zapdos",
+          "moves": [
+            {
+              "id": "thunderous-kick",
+              "name": "Thunderous Kick",
+              "type": "fighting",
+              "power": 90,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "uturn",
+              "name": "U-turn",
+              "type": "bug",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "coaching",
+              "name": "Coaching",
+              "type": "fighting",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "zapdos-galar",
+          "displayName": "Galarian Zapdos",
+          "moves": [
+            {
+              "id": "close-combat",
+              "name": "Close Combat",
+              "type": "fighting",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "knock-off",
+              "name": "Knock Off",
+              "type": "dark",
+              "power": 65,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 20
+            },
+            {
+              "id": "detect",
+              "name": "Detect",
+              "type": "fighting",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moltres-galar",
+      "cost": 5,
+      "poolSize": 9,
+      "tiers": [
+        {
+          "star": 1,
+          "level": 50,
+          "speciesId": "moltres-galar",
+          "displayName": "Galarian Moltres",
+          "moves": [
+            {
+              "id": "payback",
+              "name": "Payback",
+              "type": "dark",
+              "power": 50,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 10
+            },
+            {
+              "id": "air-slash",
+              "name": "Air Slash",
+              "type": "flying",
+              "power": 75,
+              "accuracy": 95,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "snarl",
+              "name": "Snarl",
+              "type": "dark",
+              "power": 55,
+              "accuracy": 95,
+              "category": "special",
+              "pp": 15
+            }
+          ]
+        },
+        {
+          "star": 2,
+          "level": 62,
+          "speciesId": "moltres-galar",
+          "displayName": "Galarian Moltres",
+          "moves": [
+            {
+              "id": "fiery-wrath",
+              "name": "Fiery Wrath",
+              "type": "dark",
+              "power": 90,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "hurricane",
+              "name": "Hurricane",
+              "type": "flying",
+              "power": 110,
+              "accuracy": 70,
+              "category": "special",
+              "pp": 10
+            },
+            {
+              "id": "nasty-plot",
+              "name": "Nasty Plot",
+              "type": "dark",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 20
+            },
+            {
+              "id": "protect",
+              "name": "Protect",
+              "type": "normal",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 10
+            }
+          ]
+        },
+        {
+          "star": 3,
+          "level": 74,
+          "speciesId": "moltres-galar",
+          "displayName": "Galarian Moltres",
+          "moves": [
+            {
+              "id": "dark-pulse",
+              "name": "Dark Pulse",
+              "type": "dark",
+              "power": 80,
+              "accuracy": 100,
+              "category": "special",
+              "pp": 15
+            },
+            {
+              "id": "brave-bird",
+              "name": "Brave Bird",
+              "type": "flying",
+              "power": 120,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 15
+            },
+            {
+              "id": "sucker-punch",
+              "name": "Sucker Punch",
+              "type": "dark",
+              "power": 70,
+              "accuracy": 100,
+              "category": "physical",
+              "pp": 5
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind",
+              "type": "flying",
+              "power": null,
+              "accuracy": null,
+              "category": "status",
+              "pp": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
