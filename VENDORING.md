@@ -72,15 +72,38 @@ These are roguelike-specific or out-of-scope for Auto Chess and stay out of the 
 
 Stubs replace un-vendored modules so vendored files can import them. They live in `src/vendor/pokerogue/stubs/` and are wired in via path aliases in `tsconfig.json` and `vite.config.ts`. The principle: minimum surface area to satisfy imports, throw on calls we don't intend to support yet.
 
-| Stub                  | Replaces                          | Why                                              |
-| --------------------- | --------------------------------- | ------------------------------------------------ |
-| `stubs/global-scene/` | `#app` (`global-scene.ts`)        | The vendored `global-scene.ts` is too entangled with un-vendored UI/init paths to use directly. We expose only the surface battle code touches. |
-| `stubs/system/`       | `#system/*`                       | Save system, settings, account — none of which Auto Chess needs. |
-| `stubs/api/`          | `#api/*`                          | Online services, daily runs, leaderboards — not used. |
-| `stubs/ui/`           | `#ui/*`                           | UI handlers and menus — replaced by our own Phaser UI. |
-| `stubs/mystery-encounters/` | mystery-encounter-only paths | Out of scope for Auto Chess. |
+| Stub                          | Replaces                | Why                                                                          |
+| ----------------------------- | ----------------------- | ---------------------------------------------------------------------------- |
+| `stubs/global-scene/`         | reserved for `#app` shim | Reserved. The vendored `global-scene.ts` is entangled with UI/init we don't have; when game code starts touching battle entry points, this is where the minimal facade lives. |
+| `stubs/system/`               | `#system/*`             | Save system, settings, account — none of which Auto Chess needs.            |
+| `stubs/api/`                  | `#api/*`                | Online services, daily runs, leaderboards — not used.                       |
+| `stubs/ui/`                   | `#ui/*`                 | UI handlers and menus — replaced by our own Phaser UI.                      |
+| `stubs/mystery-encounters/`   | `#mystery-encounters/*` | Out of scope for Auto Chess.                                                |
+| `stubs/init/`                 | `#init/*`               | PokeRogue's boot init — replaced by our `BootScene`.                        |
+| `stubs/inputs/`               | `#inputs/*`             | Gamepad/keyboard config — replaced by Phaser's input layer.                 |
+| `stubs/trainers/`             | `#trainers/*`           | Roguelike trainer configs — Auto Chess has no fixed-team enemy trainers.    |
+| `stubs/plugins/`              | `#plugins/*`            | Vite plugin glue we don't run.                                              |
 
-Every stub file contains a header comment explaining what it shims and what behavior calls into it should expect (typically: throw a clear error pointing at this doc).
+All stub directories are currently empty (only a `.gitkeep`). They'll grow organically as `src/game/*` starts importing battle-engine entry points and discovers what surface area the engine actually touches in those un-vendored modules. Every stub file added must:
+
+1. Re-export only the symbols actually imported by vendored code (no speculation).
+2. Throw a clear error from any value/function the game shouldn't call.
+3. Carry a header comment: what it shims, what symbols it exposes, why we don't have the real thing.
+4. Get a row added to the table above.
+
+## Typechecking strategy
+
+Vendored code is **excluded** from `npm run typecheck`. Two reasons:
+
+1. PokeRogue's upstream `tsconfig.json` runs with `strict: false` and `noImplicitAny: false`. Our root `tsconfig.json` enforces full strict mode, which produces hundreds of false-positive errors against vendored code that's perfectly valid under upstream's config.
+2. Many vendored files import from un-vendored modules (`#system/*`, `#ui/*`, etc.). Until our game code begins to use a particular battle entry point, we don't know which stubs are needed. Typechecking the whole vendor tree before that would force us to write dozens of speculative stubs.
+
+Instead:
+
+- `npm run typecheck` — strict typecheck of **our** code (`src/game/`, `src/shared/`, `src/main.ts`). This is what CI gates on.
+- `npm run typecheck:vendor` — looser typecheck of vendored code under `tsconfig.vendor.json` (mirroring upstream's settings). This is **expected to fail** until the corresponding stubs land. Useful for spot-checking what a sync introduced; not part of normal CI.
+
+When game code begins importing from `#vendor/pokerogue/...`, that import pulls vendored files into the strict typecheck graph too. Whatever stubs are needed to make that import resolve under strict get added at that point — incrementally, one game-code commit at a time.
 
 ## Sync procedure
 

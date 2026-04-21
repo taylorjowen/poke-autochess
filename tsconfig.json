@@ -33,26 +33,45 @@
       "@shared/*": ["src/shared/*"],
 
       // PokeRogue's internal aliases — preserved so vendored files compile
-      // without modification. See VENDORING.md.
-      "#app/*": ["src/vendor/pokerogue/*"],
-      "#app": ["src/vendor/pokerogue/stubs/global-scene"],
-      "#api/*": ["src/vendor/pokerogue/stubs/api/*"],
-      "#system/*": ["src/vendor/pokerogue/stubs/system/*"],
-      "#enums/*": ["src/vendor/pokerogue/enums/*"],
-      "#data/*": ["src/vendor/pokerogue/data/*"],
-      "#field/*": ["src/vendor/pokerogue/field/*"],
-      "#moves/*": ["src/vendor/pokerogue/data/moves/*"],
+      // unmodified. Mirrored in vite.config.ts. See VENDORING.md.
       "#abilities/*": ["src/vendor/pokerogue/data/abilities/*"],
+      "#api/*": ["src/vendor/pokerogue/stubs/api/*"],
       "#balance/*": ["src/vendor/pokerogue/data/balance/*"],
-      "#types/*": ["src/vendor/pokerogue/@types/*"],
-      "#test/*": ["src/vendor/pokerogue/test/*"],
-      "#ui/*": ["src/vendor/pokerogue/stubs/ui/*"],
-      "#phases/*": ["src/vendor/pokerogue/phases/*"],
-      "#sprites/*": ["src/vendor/pokerogue/sprites/*"],
+      "#biomes/*": ["src/vendor/pokerogue/data/balance/biomes/*"],
+      "#constants/*": ["src/vendor/pokerogue/constants/*"],
+      "#data/*": [
+        "src/vendor/pokerogue/data/pokemon-forms/*",
+        "src/vendor/pokerogue/data/pokemon/*",
+        "src/vendor/pokerogue/data/*"
+      ],
+      "#enums/*": ["src/vendor/pokerogue/enums/*"],
+      "#events/*": ["src/vendor/pokerogue/events/*"],
+      "#field/*": ["src/vendor/pokerogue/field/*"],
+      "#init/*": ["src/vendor/pokerogue/stubs/init/*"],
+      "#inputs/*": ["src/vendor/pokerogue/stubs/inputs/*"],
+      "#modifiers/*": ["src/vendor/pokerogue/modifier/*"],
+      "#moves/*": ["src/vendor/pokerogue/data/moves/*"],
       "#mystery-encounters/*": ["src/vendor/pokerogue/stubs/mystery-encounters/*"],
-      "#plugins/*": ["src/vendor/pokerogue/plugins/*"]
+      "#phases/*": ["src/vendor/pokerogue/phases/*"],
+      "#plugins/*": ["src/vendor/pokerogue/stubs/plugins/*"],
+      "#sprites/*": ["src/vendor/pokerogue/sprites/*"],
+      "#system/*": ["src/vendor/pokerogue/stubs/system/*"],
+      "#trainers/*": ["src/vendor/pokerogue/stubs/trainers/*"],
+      "#types/*": ["src/vendor/pokerogue/@types/*"],
+      "#ui/*": ["src/vendor/pokerogue/stubs/ui/*"],
+      "#utils/*": ["src/vendor/pokerogue/utils/*"],
+      "#app/*": ["src/vendor/pokerogue/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "vite.config.ts"],
-  "exclude": ["node_modules", "dist", "server", "src/vendor/pokerogue/test"]
+  // We typecheck OUR code under strict mode. The vendored PokeRogue tree uses
+  // its own (looser) tsconfig — see tsconfig.vendor.json. That separation lets
+  // us enforce strictness on our code without forking upstream's config.
+  "include": [
+    "src/main.ts",
+    "src/vite-env.d.ts",
+    "src/game/**/*.ts",
+    "src/shared/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "server", "src/vendor"]
 }

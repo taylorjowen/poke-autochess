@@ -20,27 +20,35 @@ export default defineConfig({
       '@vendor': resolve(__dirname, 'src/vendor'),
       '@shared': resolve(__dirname, 'src/shared'),
 
-      // PokeRogue internal aliases. Keep in sync with tsconfig.json paths.
-      '#app': vendor('stubs/global-scene'),
-      '#api': vendor('stubs/api'),
-      '#system': vendor('stubs/system'),
-      '#enums': vendor('enums'),
-      '#data': vendor('data'),
-      '#field': vendor('field'),
-      '#moves': vendor('data/moves'),
+      // PokeRogue's internal aliases. Keep in sync with tsconfig.json paths.
       '#abilities': vendor('data/abilities'),
+      '#api': vendor('stubs/api'),
       '#balance': vendor('data/balance'),
+      '#biomes': vendor('data/balance/biomes'),
+      '#constants': vendor('constants'),
+      '#data': vendor('data'),
+      '#enums': vendor('enums'),
+      '#events': vendor('events'),
+      '#field': vendor('field'),
+      '#init': vendor('stubs/init'),
+      '#inputs': vendor('stubs/inputs'),
+      '#modifiers': vendor('modifier'),
+      '#moves': vendor('data/moves'),
+      '#mystery-encounters': vendor('stubs/mystery-encounters'),
+      '#phases': vendor('phases'),
+      '#plugins': vendor('stubs/plugins'),
+      '#sprites': vendor('sprites'),
+      '#system': vendor('stubs/system'),
+      '#trainers': vendor('stubs/trainers'),
       '#types': vendor('@types'),
       '#ui': vendor('stubs/ui'),
-      '#phases': vendor('phases'),
-      '#sprites': vendor('sprites'),
-      '#mystery-encounters': vendor('stubs/mystery-encounters'),
-      '#plugins': vendor('plugins'),
+      '#utils': vendor('utils'),
+      '#app': vendor(''),
     },
   },
-  // Phaser ships ESM and CJS bundles. Force ESM resolution and let Vite
-  // tree-shake. Asset handling stays default (public/ for static, import for
-  // hashed) — game asset loading is a later task; see VENDORING.md.
+  // Phaser ships ESM and CJS bundles. Vite picks ESM and tree-shakes. Asset
+  // handling stays default (public/ for static, import for hashed) — game
+  // asset loading is a later task; see VENDORING.md § Assets.
   optimizeDeps: {
     include: ['phaser', 'peerjs'],
   },

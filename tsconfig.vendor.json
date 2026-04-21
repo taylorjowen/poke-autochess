@@ -1,0 +1,72 @@
+{
+  // SPDX-License-Identifier: AGPL-3.0-only
+  // Mirrors PokeRogue's upstream tsconfig.json compiler settings as closely as
+  // makes sense for a vendored snapshot. Used by `npm run typecheck:vendor`.
+  // Failures here are expected until corresponding stubs land in
+  // src/vendor/pokerogue/stubs/. See VENDORING.md.
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.AsyncIterable",
+      "DOM.Iterable",
+      "ScriptHost",
+      "WebWorker.ImportScripts",
+      "ES2023.Array",
+      "ES2024.Promise",
+      "ES2024.Object",
+      "ESNext.Iterator",
+      "ESNext.Collection"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "strict": false,
+    "exactOptionalPropertyTypes": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "#abilities/*": ["src/vendor/pokerogue/data/abilities/*"],
+      "#api/*": ["src/vendor/pokerogue/stubs/api/*"],
+      "#balance/*": ["src/vendor/pokerogue/data/balance/*"],
+      "#biomes/*": ["src/vendor/pokerogue/data/balance/biomes/*"],
+      "#constants/*": ["src/vendor/pokerogue/constants/*"],
+      "#data/*": [
+        "src/vendor/pokerogue/data/pokemon-forms/*",
+        "src/vendor/pokerogue/data/pokemon/*",
+        "src/vendor/pokerogue/data/*"
+      ],
+      "#enums/*": ["src/vendor/pokerogue/enums/*"],
+      "#events/*": ["src/vendor/pokerogue/events/*"],
+      "#field/*": ["src/vendor/pokerogue/field/*"],
+      "#init/*": ["src/vendor/pokerogue/stubs/init/*"],
+      "#inputs/*": ["src/vendor/pokerogue/stubs/inputs/*"],
+      "#modifiers/*": ["src/vendor/pokerogue/modifier/*"],
+      "#moves/*": ["src/vendor/pokerogue/data/moves/*"],
+      "#mystery-encounters/*": ["src/vendor/pokerogue/stubs/mystery-encounters/*"],
+      "#phases/*": ["src/vendor/pokerogue/phases/*"],
+      "#plugins/*": ["src/vendor/pokerogue/stubs/plugins/*"],
+      "#sprites/*": ["src/vendor/pokerogue/sprites/*"],
+      "#system/*": ["src/vendor/pokerogue/stubs/system/*"],
+      "#trainers/*": ["src/vendor/pokerogue/stubs/trainers/*"],
+      "#types/*": ["src/vendor/pokerogue/@types/*"],
+      "#ui/*": ["src/vendor/pokerogue/stubs/ui/*"],
+      "#utils/*": ["src/vendor/pokerogue/utils/*"],
+      "#app/*": ["src/vendor/pokerogue/*"]
+    }
+  },
+  "include": ["src/vendor/pokerogue/**/*.ts", "src/vendor/pokerogue/**/*.d.ts"],
+  "exclude": ["node_modules", "src/vendor/pokerogue/test"]
+}
