@@ -50,7 +50,7 @@ export default defineConfig({
   // handling stays default (public/ for static, import for hashed) — game
   // asset loading is a later task; see VENDORING.md § Assets.
   optimizeDeps: {
-    include: ['phaser', 'peerjs'],
+    include: ['phaser'],
   },
   build: {
     target: 'es2022',
