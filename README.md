@@ -36,6 +36,17 @@ docs/          Design docs
 
 See [`CLAUDE.md`](./CLAUDE.md) for the full architectural overview and [`VENDORING.md`](./VENDORING.md) for the PokeRogue sync protocol.
 
+## Deployment
+
+GitHub Actions runs CI on every pull request. Same-repository PRs get a Cloudflare Pages preview link in a PR comment. Merges to `main` deploy production to <https://poke-autochess.pages.dev> and redeploy the `pac-signaling` worker.
+
+Configure these repository secrets to enable Cloudflare deploys:
+
+- `CLOUDFLARE_API_TOKEN` with Account → Cloudflare Pages → Edit and Account → Workers Scripts → Edit permissions.
+- `CLOUDFLARE_ACCOUNT_ID`.
+
+The repository variable `VITE_SIGNALING_URL` is optional; set it to override the signaling URL used in the site build.
+
 ## Status
 
 Pre-alpha. This is a non-commercial fan project. Pokémon and all related names, characters, and assets are property of Nintendo / Game Freak / The Pokémon Company. No affiliation, no commercial use.

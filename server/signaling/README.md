@@ -57,7 +57,7 @@ npm run deploy      # wrangler deploy
 npm run tail        # stream live logs
 ```
 
-You'll need `wrangler login` the first time and a Cloudflare account with Workers Paid ($5/mo) since the signaling broker uses Durable Objects.
+The signaling broker uses SQLite-backed Durable Objects, which are available on the Workers Free plan. CI deploys the Worker on merges to `main`; manual deployments require `wrangler login`.
 
 ## What's NOT in this Worker
 
