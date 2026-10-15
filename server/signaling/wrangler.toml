@@ -12,6 +12,6 @@ class_name = "LobbyRoom"
 
 [[migrations]]
 tag = "v1"
-new_classes = ["LobbyRoom"]
+new_sqlite_classes = ["LobbyRoom"]
 
 # Per-environment config (stage, prod) can be added later via [env.<name>].

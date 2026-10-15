@@ -1,0 +1,181 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            server/signaling/package-lock.json
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+
+      - run: npm ci
+        working-directory: server/signaling
+
+      - run: npm run typecheck
+        working-directory: server/signaling
+
+  deploy:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      deployments: write
+    env:
+      CF_CONFIGURED: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip deployment when Cloudflare secrets are missing
+        if: env.CF_CONFIGURED != 'true'
+        run: echo "::notice::Deploy skipped because CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets are not set."
+
+      - uses: actions/setup-node@v4
+        if: env.CF_CONFIGURED == 'true'
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            server/signaling/package-lock.json
+
+      - name: Install root dependencies
+        if: env.CF_CONFIGURED == 'true'
+        run: npm ci
+
+      - name: Install signaling dependencies
+        if: env.CF_CONFIGURED == 'true'
+        run: npm ci
+        working-directory: server/signaling
+
+      - name: Deploy signaling worker
+        if: env.CF_CONFIGURED == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+          workingDirectory: server/signaling
+
+      - name: Resolve signaling URL
+        if: env.CF_CONFIGURED == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          VITE_SIGNALING_URL_OVERRIDE: ${{ vars.VITE_SIGNALING_URL }}
+        run: |
+          if [[ -n "$VITE_SIGNALING_URL_OVERRIDE" ]]; then
+            echo "VITE_SIGNALING_URL=$VITE_SIGNALING_URL_OVERRIDE" >> "$GITHUB_ENV"
+          elif response="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain")" &&
+            subdomain="$(jq -r '.result.subdomain // empty' <<< "$response")" &&
+            [[ -n "$subdomain" ]]; then
+            echo "VITE_SIGNALING_URL=wss://pac-signaling.$subdomain.workers.dev" >> "$GITHUB_ENV"
+          else
+            echo "::warning::VITE_SIGNALING_URL is unset and the Cloudflare Workers subdomain could not be resolved; continuing without it."
+          fi
+
+      - name: Build Pages site
+        if: env.CF_CONFIGURED == 'true'
+        run: npm run build
+
+      - name: Ensure Pages project exists
+        if: env.CF_CONFIGURED == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if output="$(npx --yes wrangler@3.114.17 pages project create poke-autochess --production-branch=main 2>&1)"; then
+            printf '%s\n' "$output"
+          else
+            status=$?
+            printf '%s\n' "$output"
+            if printf '%s\n' "$output" | grep -qi 'already exists'; then
+              echo "Pages project already exists."
+            else
+              exit "$status"
+            fi
+          fi
+
+      - name: Deploy Pages site
+        if: env.CF_CONFIGURED == 'true'
+        id: pages-deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=poke-autochess --branch=${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: 3.114.17
+
+      - name: Comment with Pages preview
+        if: env.CF_CONFIGURED == 'true' && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          DEPLOYMENT_URL: ${{ steps.pages-deploy.outputs.deployment-url }}
+          ALIAS_URL: ${{ steps.pages-deploy.outputs.pages-deployment-alias-url }}
+          COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+        with:
+          script: |
+            const marker = '<!-- pac-preview -->';
+            const links = [
+              process.env.DEPLOYMENT_URL && `- Preview: ${process.env.DEPLOYMENT_URL}`,
+              process.env.ALIAS_URL && `- Branch alias: ${process.env.ALIAS_URL}`,
+            ].filter(Boolean);
+            const body = [
+              marker,
+              '### Cloudflare Pages preview',
+              ...links,
+              `Commit: \`${process.env.COMMIT_SHA}\``,
+            ].join('\n');
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+            const existing = comments.find((comment) => comment.body?.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body,
+              });
+            }
